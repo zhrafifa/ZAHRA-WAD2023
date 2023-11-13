@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3308
--- Generation Time: Oct 31, 2023 at 06:30 PM
--- Server version: 10.4.25-MariaDB
--- PHP Version: 8.1.10
+-- Generation Time: Nov 13, 2023 at 03:27 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `modul3_wad`
+-- Database: `db_wad_modul3`
 --
 
 -- --------------------------------------------------------
@@ -34,7 +34,14 @@ CREATE TABLE `showroom_mobil` (
   `warna_mobil` varchar(255) NOT NULL,
   `tipe_mobil` varchar(255) NOT NULL,
   `harga_mobil` int(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `showroom_mobil`
+--
+
+INSERT INTO `showroom_mobil` (`id`, `nama_mobil`, `brand_mobil`, `warna_mobil`, `tipe_mobil`, `harga_mobil`) VALUES
+(1, '', '', '', '', 0);
 
 --
 -- Indexes for dumped tables
@@ -54,7 +61,7 @@ ALTER TABLE `showroom_mobil`
 -- AUTO_INCREMENT for table `showroom_mobil`
 --
 ALTER TABLE `showroom_mobil`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
